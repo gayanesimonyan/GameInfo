@@ -1,9 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Button from "@mui/material/Button";
+import styled from "@emotion/styled";
+
+const LeftDiv = styled.div`
+  text-align: left;
+`;
 
 function App() {
   return (
     <div className="App">
+      <LeftDiv>
+        <Button variant="contained">Contained</Button>
+      </LeftDiv>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
